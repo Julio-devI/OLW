@@ -15,7 +15,7 @@ class Dashboard extends Component
 
     public function render()
     {
-        return view('livewire.dashboard');
+        return view('admin.dashboard');
     }
 
     protected $rules = [

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SaleController;
 use App\Http\Livewire\Dashboard;
@@ -32,6 +33,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/clients', ClientController::class);
     Route::get('/sales', [SaleController::class, 'index']);
+    Route::get('/produtos', [ProductsController::class, 'index']);
 });
 
 require __DIR__.'/auth.php';
